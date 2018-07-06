@@ -1,0 +1,25 @@
+{
+  "name": "gfw_whitelist_to_switchy",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "babel-node src/index",
+    "lint": "eslint src/"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.46",
+    "@babel/node": "^7.0.0-beta.52",
+    "@babel/plugin-external-helpers": "^7.0.0-beta.46",
+    "@babel/preset-env": "^7.0.0-beta.46",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.11.0"
+  },
+  "dependencies": {
+    "isomorphic-fetch": "^2.2.1"
+  }
+}

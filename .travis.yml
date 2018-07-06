@@ -1,0 +1,21 @@
+language: node_js
+node_js:
+  - "8"
+
+cache: yarn
+
+install: yarn
+script:
+  - yarn lint
+  - yarn start
+deploy:
+  provider: pages
+  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  skip-cleanup: true
+  local-dir: ./
+  target-branch: master
+  keep-history: true
+  verbose: true
+  on:
+    branch: master
+    
